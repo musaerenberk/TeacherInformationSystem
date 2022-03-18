@@ -1,0 +1,26 @@
+﻿@model IEnumerable<DemoTIS.Models.Teacher>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+   
+    <td>@item.Name</td>
+    <td>@item.Surname</td>
+    <td>@item.Description</td>
+   
+</tr>}
+    </tbody>
+</table>

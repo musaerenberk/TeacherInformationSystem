@@ -1,0 +1,37 @@
+﻿@model DemoTIS.Models.Teacher
+<form method="POST" asp-action="Create" autocomplete="off">
+    <table class="table table-borderless justify-content-md-center">
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input type="hidden" asp-for="Id">
+                <input type="text" asp-for="Name" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Surname:</td>
+            <td>
+                <input type="text" asp-for="Surname" class="form-control">
+
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td>
+                <input type="text" asp-for="Description" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            @if (Model.Id == 0)
+            {
+<td>
+    <button type="submit" class="btn btn-success">Create</button>
+</td> }
+            else
+            {
+<td>
+    <button type="submit" class="btn btn-success">Update</button>
+</td>            }
+        </tr>
+
+    </table>
+</form>

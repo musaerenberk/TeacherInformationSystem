@@ -1,0 +1,29 @@
+﻿@model IEnumerable<DemoTIS.Models.Teacher>
+
+<a class="btn btn-success" asp-action="Teacher" asp-route-id="null">Create</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+<tr>
+   
+    <td>@item.Name</td>
+    <td>@item.Surname</td>
+    <td>@item.Description</td>
+    <td>
+        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+        <a class="btn btn-primary" asp-action="Teacher" asp-route-id="@item.Id">Update</a>
+    </td>
+</tr>}
+    </tbody>
+</table>
