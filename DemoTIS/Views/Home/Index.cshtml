@@ -1,8 +1,168 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html class="no-js">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+
+    <meta name="author" content="Muhammad Morshed">
+
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/css/slick-theme.css" rel="stylesheet" />
+    <link href="~/css/slick.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/styledif.css" rel="stylesheet" />
+
+
+</head>
+
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div class="preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+
+
+    <section class="hero-area overlay" style="background-image: url(hero-area.jpg)">
+
+        <div class="block">
+            <div class="video-button">
+            </div>
+            <h1>Professor Information System</h1>
+            <p>You can login below. If you are a student, you will only be able to read teacher information, if you are a professor, you will be able to update your own information, if you are a human resources employee, you will be able to update, delete or add professor information.</p>
+            <a data-scroll href="#login" class="btn btn-transparent">Login To The System</a>
+        </div>
+    </section>
+
+
+    <header id="navigation" class="navbar navigation">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand logo" href="#body">
+
+                    <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC" stroke-width="3">
+                                <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+                                <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+                                <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+
+            </div>
+
+            
+
+
+        </div>
+    </header>
+
+    <section id="login" class="bg-one about section">
+
+
+        <!-- section title -->
+        <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+            <center>  <h2>Log<span class="color">in</span> </h2></center>
+            <div class="border"></div>
+        </div>
+
+        <!-- /section title -->
+        <!-- About item -->
+        <a asp-controller="Admin" asp-action="Index" method="post">
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+                <div class="block">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                    </div>
+                    <!-- Express About Yourself -->
+                    <div class="content text-center">
+                        <h3 class="ddd">Human Resources</h3>
+                        <p>Has unlimited authority within the system.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- End About item -->
+        <!-- About item -->
+        <a asp-controller="Teachers" asp-action="Index" method="post">
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+                <div class="block">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                    </div>
+                    <!-- Express About Yourself -->
+                    <div class="content text-center">
+                        <h3 class="ddd">Professor</h3>
+                        <p>Update your own information.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- End About item -->
+        <!-- About item -->
+        <a asp-controller="Student" asp-action="Index" method="post">
+            <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+                <div class="block">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                    </div>
+                    <!-- Express About Yourself -->
+                    <div class="content text-center">
+                        <h3 class="ddd">Student</h3>
+                        <p>Only be able to read.</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <!-- End About item -->
+
+
+
+
+    </section>   <!-- End section -->
+
+    <script src="~/js/site.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/jquery.filterizr.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/smooth-scroll.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+
+</body>
+</html>

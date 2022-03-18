@@ -1,26 +1,82 @@
 ﻿@model IEnumerable<DemoTIS.Models.Teacher>
 
 
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+
+    <meta name="author" content="Muhammad Morshed">
+
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/css/slick-theme.css" rel="stylesheet" />
+    <link href="~/css/slick.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/styledif.css" rel="stylesheet" />
+    <style>
+        td {
+            color: white;
+        }
+
+        tr {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
 
 
-<table class="table">
-    <thead>
-        <tr>
-            
-            <th scope="col">Name</th>
-            <th scope="col">Surname</th>
-            <th scope="col">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-<tr>
-   
-    <td>@item.Name</td>
-    <td>@item.Surname</td>
-    <td>@item.Description</td>
-   
-</tr>}
-    </tbody>
-</table>
+    <table class="table">
+        <thead>
+           
+            <tr>
+
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Department</th>
+                <th scope="col">Position</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Mail Adress</th>
+                <th scope="col">Office No</th>
+                <th scope="col">Working Hour</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+    <tr>
+
+        <td>@item.Name</td>
+        <td>@item.Surname</td>
+        <td>@item.Department</td>
+        <td>@item.Position</td>
+        <td>@item.PhoneNumber</td>
+        <td>@item.MailAdress</td>
+        <td>@item.OfficeNo</td>
+        <td>@item.WorkingHour</td>
+
+    </tr>
+}
+        </tbody>
+    </table>
+    <script src="~/js/site.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/jquery.filterizr.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/smooth-scroll.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+</body>
+</html>
