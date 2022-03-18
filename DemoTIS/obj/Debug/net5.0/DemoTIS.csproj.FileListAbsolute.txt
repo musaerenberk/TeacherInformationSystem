@@ -63,3 +63,5 @@ C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views
 C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\Student\Index.cshtml.g.cs
 C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\Teachers\Index.cshtml.g.cs
 C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\Teachers\Teacher.cshtml.g.cs
+C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\LoginAdmin\Index.cshtml.g.cs
+C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\LoginTeacher\Index.cshtml.g.cs
