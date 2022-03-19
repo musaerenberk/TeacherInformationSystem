@@ -13,5 +13,18 @@ namespace DemoTIS.Models
 
         }
         public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<HumanResourcesSpecialist> HumanResourcesSpecialists { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<HumanResourcesSpecialist>().HasData(
+                    new HumanResourcesSpecialist
+                    {
+                        Id = 2,
+                        MailAdress = "humanr@gmail.com",
+                        Password = "123"
+                       
+                    }
+                );
+        }
     }
 }

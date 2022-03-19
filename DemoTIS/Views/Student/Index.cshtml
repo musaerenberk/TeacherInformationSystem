@@ -8,7 +8,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Meghna One page parallax responsive HTML Template ">
 
-    <meta name="author" content="Muhammad Morshed">
 
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,15 +28,38 @@
         tr {
             color: white;
         }
+
+        form.example button {
+            float: left;
+            background: #2196F3;
+            color: white;
+            font-size: inherit;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+            form.example button:hover {
+                background: #0b7dda;
+            }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 
 </head>
 <body>
+    <form method="get" asp-action="Index" class="example" style="margin:auto;max-width:300px;margin-top:3%">
+        <input style="margin-left:2%" type="text" placeholder="Search.." name="name" value="@ViewData["name"]">
+        <button type="submit">Search</button>
 
-
+    </form>
     <table class="table">
         <thead>
-           
+
             <tr>
 
                 <th scope="col">Name</th>
@@ -53,19 +75,18 @@
         <tbody>
             @foreach (var item in Model)
             {
-    <tr>
+<tr>
 
-        <td>@item.Name</td>
-        <td>@item.Surname</td>
-        <td>@item.Department</td>
-        <td>@item.Position</td>
-        <td>@item.PhoneNumber</td>
-        <td>@item.MailAdress</td>
-        <td>@item.OfficeNo</td>
-        <td>@item.WorkingHour</td>
+    <td>@item.Name</td>
+    <td>@item.Surname</td>
+    <td>@item.Department</td>
+    <td>@item.Position</td>
+    <td>@item.PhoneNumber</td>
+    <td>@item.MailAdress</td>
+    <td>@item.OfficeNo</td>
+    <td>@item.WorkingHour</td>
 
-    </tr>
-}
+</tr>}
         </tbody>
     </table>
     <script src="~/js/site.js"></script>
