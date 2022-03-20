@@ -1,105 +1,108 @@
 ﻿@model IEnumerable<DemoTIS.Models.Teacher>
 
-    <!DOCTYPE html>
-    <html class="no-js">
+<!DOCTYPE html>
+<html class="no-js">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Meghna One page parallax responsive HTML Template ">
-        <title>Home Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       
-        <link href="~/css/animate.css" rel="stylesheet" />
-        <link href="~/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="~/css/magnific-popup.css" rel="stylesheet" />
-        <link href="~/css/slick-theme.css" rel="stylesheet" />
-        <link href="~/css/slick.css" rel="stylesheet" />
-        <link href="~/css/style.css" rel="stylesheet" />
-        <link href="~/css/styledif.css" rel="stylesheet" />
-        <style>
-            td {
-                color: white;
+
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/css/slick-theme.css" rel="stylesheet" />
+    <link href="~/css/slick.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/styledif.css" rel="stylesheet" />
+    <style>
+        td {
+            color: white;
+        }
+
+        tr {
+            color: white;
+        }
+
+        form.example button {
+            float: left;
+            background: #2196F3;
+            color: white;
+            font-size: inherit;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+            form.example button:hover {
+                background: #0b7dda;
             }
 
-            tr {
-                color: white;
-            }
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 
-            form.example button {
-                float: left;
-                background: #2196F3;
-                color: white;
-                font-size: inherit;
-                border: 1px solid grey;
-                border-left: none;
-                cursor: pointer;
-            }
+</head>
+<body>
 
-                form.example button:hover {
-                    background: #0b7dda;
-                }
+    <div>
+        <a class="btn btn-primary" asp-action="Teacher" asp-route-id="2">Update Your Own User</a>
+        <a class="btn btn-danger" style="background-color: crimson; margin-left: 70%;" asp-area="" asp-controller="Home" asp-action="Index">Logout</a>
+    </div>
 
-            form.example::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-        </style>
+    <form method="get" asp-action="Index" class="example" style="margin:auto;max-width:300px;margin-top:3%">
+        <input style="margin-left: 2%;; " type="text" placeholder="Search.." name="name" value="@ViewData["name"]">
+        <button type="submit">Search</button>
 
-    </head>
-    <body>
-        <form method="get" asp-action="Index" class="example" style="margin:auto;max-width:300px;margin-top:3%">
-            <input style="margin-left: 2%;; " type="text" placeholder="Search.." name="name" value="@ViewData["name"]">
-            <button type="submit">Search</button>
-           
-            <a  style=" margin-top: 10%; margin-left: 200%" class="btn btn-primary" asp-action="Teacher" asp-route-id="2">Update Your Own User</a>
 
-        </form>
-        <table class="table">
-            <thead>
-                <tr>
-
-                    <th scope="col">Name</th>
-                    <th scope="col">Surname</th>
-                    <th scope="col">Department</th>
-                    <th scope="col">Position</th>
-                    <th scope="col">Phone Number</th>
-                    <th scope="col">Mail Adress</th>
-                    <th scope="col">Office No</th>
-                    <th scope="col">Working Hour</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+    </form>
+    <table class="table">
+        <thead>
             <tr>
 
-                <td>@item.Name</td>
-                <td>@item.Surname</td>
-                <td>@item.Department</td>
-                <td>@item.Position</td>
-                <td>@item.PhoneNumber</td>
-                <td>@item.MailAdress</td>
-                <td>@item.OfficeNo</td>
-                <td>@item.WorkingHour</td>
-
-
-
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Department</th>
+                <th scope="col">Position</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Mail Adress</th>
+                <th scope="col">Office No</th>
+                <th scope="col">Working Hour</th>
             </tr>
-                            
-}
-            </tbody>
-        </table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+<tr>
 
-        <script src="~/js/bootstrap.min.js"></script>
-        <script src="~/js/jquery.countTo.js"></script>
-        <script src="~/js/jquery.filterizr.min.js"></script>
-        <script src="~/js/jquery.magnific-popup.min.js"></script>
-        <script src="~/js/jquery.min.js"></script>
-        <script src="~/js/script.js"></script>
-        <script src="~/js/slick.min.js"></script>
-        <script src="~/js/smooth-scroll.min.js"></script>
-        <script src="~/js/wow.min.js"></script>
-    </body>
+    <td>@item.Name</td>
+    <td>@item.Surname</td>
+    <td>@item.Department</td>
+    <td>@item.Position</td>
+    <td>@item.PhoneNumber</td>
+    <td>@item.MailAdress</td>
+    <td>@item.OfficeNo</td>
+    <td>@item.WorkingHour</td>
+
+
+
+</tr>}
+        </tbody>
+    </table>
+
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/jquery.filterizr.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/smooth-scroll.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+</body>
 </html>

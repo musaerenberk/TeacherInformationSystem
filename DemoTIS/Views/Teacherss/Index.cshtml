@@ -6,13 +6,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Meghna One page parallax responsive HTML Template ">
-
-    <meta name="author" content="Muhammad Morshed">
-
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="~/css/site.css" rel="stylesheet" />
+
     <link href="~/css/animate.css" rel="stylesheet" />
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/magnific-popup.css" rel="stylesheet" />
@@ -52,19 +49,18 @@
 
 </head>
 <body>
-   
 
     <div>
-        <a class="btn btn-success" asp-action="Teacher" asp-route-id="null">Create</a>
-        <a class="btn btn-danger" style="background-color: crimson; margin-left: 75%;" asp-area="" asp-controller="Home" asp-action="Index">Logout</a>
+        <a class="btn btn-primary" asp-action="Teacher" asp-route-id="3">Update Your Own User</a>
+        <a class="btn btn-danger" style="background-color: crimson; margin-left: 70%;" asp-area="" asp-controller="Home" asp-action="Index">Logout</a>
     </div>
 
-    <form method="get" asp-action="Index" class="example" style="margin:auto;max-width:300px">
-        <input style="margin-left:2%" type="text" placeholder="Search.." name="name" value="@ViewData["name"]">
+    <form method="get" asp-action="Index" class="example" style="margin:auto;max-width:300px;margin-top:3%">
+        <input style="margin-left: 2%;; " type="text" placeholder="Search.." name="name" value="@ViewData["name"]">
         <button type="submit">Search</button>
 
-    </form>
 
+    </form>
     <table class="table">
         <thead>
             <tr>
@@ -93,14 +89,12 @@
     <td>@item.OfficeNo</td>
     <td>@item.WorkingHour</td>
 
-    <td>
-        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-        <a class="btn btn-primary" asp-action="Teacher" asp-route-id="@item.Id">Update</a>
-    </td>
+
+
 </tr>}
         </tbody>
     </table>
-    <script src="~/js/site.js"></script>
+
     <script src="~/js/bootstrap.min.js"></script>
     <script src="~/js/jquery.countTo.js"></script>
     <script src="~/js/jquery.filterizr.min.js"></script>

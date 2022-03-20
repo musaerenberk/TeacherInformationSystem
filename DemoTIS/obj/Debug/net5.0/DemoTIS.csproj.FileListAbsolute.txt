@@ -65,3 +65,5 @@ C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views
 C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\LoginAdmin\Index.cshtml.g.cs
 C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\LoginTeacher\Index.cshtml.g.cs
 C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\DemoTIS.csproj.AssemblyReference.cache
+C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\Teacherss\Index.cshtml.g.cs
+C:\Users\berk.karadeli\source\repos\DemoTIS\DemoTIS\obj\Debug\net5.0\Razor\Views\Teacherss\Teacher.cshtml.g.cs

@@ -52,6 +52,9 @@
 
 </head>
 <body>
+    <div>
+        <a class="btn btn-danger" style="background-color: crimson; margin-left: 75%;" asp-area="" asp-controller="Home" asp-action="Index">Logout</a>
+    </div>
     <form method="get" asp-action="Index" class="example" style="margin:auto;max-width:300px;margin-top:3%">
         <input style="margin-left:2%" type="text" placeholder="Search.." name="name" value="@ViewData["name"]">
         <button type="submit">Search</button>
@@ -86,7 +89,8 @@
     <td>@item.OfficeNo</td>
     <td>@item.WorkingHour</td>
 
-</tr>}
+</tr>
+}
         </tbody>
     </table>
     <script src="~/js/site.js"></script>

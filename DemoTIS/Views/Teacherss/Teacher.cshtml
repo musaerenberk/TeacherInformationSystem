@@ -1,0 +1,131 @@
+﻿@model DemoTIS.Models.Teacher
+
+    <!DOCTYPE html>
+    <html class="no-js">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+
+        <meta name="author" content="Muhammad Morshed">
+
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="~/css/site.css" rel="stylesheet" />
+        <link href="~/css/animate.css" rel="stylesheet" />
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/css/magnific-popup.css" rel="stylesheet" />
+        <link href="~/css/slick-theme.css" rel="stylesheet" />
+        <link href="~/css/slick.css" rel="stylesheet" />
+        <link href="~/css/style.css" rel="stylesheet" />
+        <link href="~/css/styledif.css" rel="stylesheet" />
+        <style>
+            td {
+                color: white;
+            }
+
+            tr {
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <body>
+            <form method="POST" asp-action="Create" autocomplete="off">
+                <table class="table table-borderless justify-content-md-center">
+                    <tr>
+                        <td>Name:</td>
+                        <td>
+                            <input type="hidden" asp-for="Id">
+                            <input type="text" asp-for="Name" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Surname:</td>
+                        <td>
+                            <input type="text" asp-for="Surname" class="form-control">
+
+                    </tr>
+                    <tr>
+                        <td>Department:</td>
+                        <td>
+                            <input type="text" asp-for="Department" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Position:</td>
+                        <td>
+                            <input type="text" asp-for="Position" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td>
+                            <input type="text" asp-for="PhoneNumber" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mail Adress:</td>
+                        <td>
+                            <input type="text" asp-for="MailAdress" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Office No:</td>
+                        <td>
+                            <input type="text" asp-for="OfficeNo" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Working Hour:</td>
+                        <td>
+                            <input type="text" asp-for="WorkingHour" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="text" asp-for="Password" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        @if (Model.Id == 0)
+                        {
+                <td>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </td> }
+                            else
+                            {
+                <td>
+                    <button type="submit" class="btn btn-success">Update</button>
+                </td>}
+                    </tr>
+
+                </table>
+            </form>
+
+            <script src="~/js/site.js"></script>
+            <script src="~/js/bootstrap.min.js"></script>
+            <script src="~/js/jquery.countTo.js"></script>
+            <script src="~/js/jquery.filterizr.min.js"></script>
+            <script src="~/js/jquery.magnific-popup.min.js"></script>
+            <script src="~/js/jquery.min.js"></script>
+            <script src="~/js/script.js"></script>
+            <script src="~/js/slick.min.js"></script>
+            <script src="~/js/smooth-scroll.min.js"></script>
+            <script src="~/js/wow.min.js"></script>
+        </body>
+        <script src="~/js/site.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.countTo.js"></script>
+        <script src="~/js/jquery.filterizr.min.js"></script>
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/script.js"></script>
+        <script src="~/js/slick.min.js"></script>
+        <script src="~/js/smooth-scroll.min.js"></script>
+        <script src="~/js/wow.min.js"></script>
+    </body>
+</html>

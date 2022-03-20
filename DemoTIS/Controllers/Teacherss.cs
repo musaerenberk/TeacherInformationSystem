@@ -1,5 +1,4 @@
 ﻿using DemoTIS.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -11,18 +10,18 @@ using System.Threading.Tasks;
 
 namespace DemoTIS.Controllers
 {
-    public class Teachers : Controller
+    public class Teacherss : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly SchoolContext _context;
 
-        public Teachers(ILogger<HomeController> logger, SchoolContext context)
+        public Teacherss(ILogger<HomeController> logger, SchoolContext context)
         {
             _context = context;
             _logger = logger;
         }
 
-     
+       
         public IActionResult Index()
         {
             var list = _context.Teachers.ToList();
