@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\berk.karadeli\\source\\repos\\DemoTIS\\DemoTIS\\DemoTIS.csproj": {}
+    "C:\\Users\\berk.karadeli\\source\\repos\\SoftwareProjectManagementHw\\DemoObs\\DemoTIS\\DemoTIS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\berk.karadeli\\source\\repos\\DemoTIS\\DemoTIS\\DemoTIS.csproj": {
+    "C:\\Users\\berk.karadeli\\source\\repos\\SoftwareProjectManagementHw\\DemoObs\\DemoTIS\\DemoTIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\berk.karadeli\\source\\repos\\DemoTIS\\DemoTIS\\DemoTIS.csproj",
+        "projectUniqueName": "C:\\Users\\berk.karadeli\\source\\repos\\SoftwareProjectManagementHw\\DemoObs\\DemoTIS\\DemoTIS.csproj",
         "projectName": "DemoTIS",
-        "projectPath": "C:\\Users\\berk.karadeli\\source\\repos\\DemoTIS\\DemoTIS\\DemoTIS.csproj",
+        "projectPath": "C:\\Users\\berk.karadeli\\source\\repos\\SoftwareProjectManagementHw\\DemoObs\\DemoTIS\\DemoTIS.csproj",
         "packagesPath": "C:\\Users\\berk.karadeli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\berk.karadeli\\source\\repos\\DemoTIS\\DemoTIS\\obj\\",
+        "outputPath": "C:\\Users\\berk.karadeli\\source\\repos\\SoftwareProjectManagementHw\\DemoObs\\DemoTIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

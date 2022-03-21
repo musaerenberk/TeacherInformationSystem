@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v5I1iOVgYgtlbR/AjIl1EtlWhbCoI8j+gWZMi3NcHQCZT324+iGwGyHi5kRBFqbaYxNL4Q4Bbm1Alpn4zvlyLA==",
+  "dgSpecHash": "b5IbFcnZoNLmPwLGwzJ+ORl2q4bDvPBSq+CEFJLclB8KEjp6PUj+MUVKEyoMoaDbkH8OMyM1t1B0nwXJUNbZUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\berk.karadeli\\source\\repos\\DemoTIS\\DemoTIS\\DemoTIS.csproj",
+  "projectFilePath": "C:\\Users\\berk.karadeli\\source\\repos\\SoftwareProjectManagementHw\\DemoObs\\DemoTIS\\DemoTIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\berk.karadeli\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\berk.karadeli\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
