@@ -1,131 +1,144 @@
 ﻿@model DemoTIS.Models.Teacher
 
-    <!DOCTYPE html>
-    <html class="no-js">
+<!DOCTYPE html>
+<html class="no-js">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Meghna One page parallax responsive HTML Template ">
 
-        <meta name="author" content="Muhammad Morshed">
+    <meta name="author" content="Muhammad Morshed">
 
-        <title>Home Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="~/css/site.css" rel="stylesheet" />
-        <link href="~/css/animate.css" rel="stylesheet" />
-        <link href="~/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="~/css/magnific-popup.css" rel="stylesheet" />
-        <link href="~/css/slick-theme.css" rel="stylesheet" />
-        <link href="~/css/slick.css" rel="stylesheet" />
-        <link href="~/css/style.css" rel="stylesheet" />
-        <link href="~/css/styledif.css" rel="stylesheet" />
-        <style>
-            td {
-                color: white;
-            }
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/css/slick-theme.css" rel="stylesheet" />
+    <link href="~/css/slick.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/styledif.css" rel="stylesheet" />
 
-            tr {
-                color: white;
-            }
-        </style>
+    <script crossorigin="anonymous" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+    <link href="~/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <style>
+        .fa {
+            color: black
+        }
+    </style>
 
-    </head>
-    <body>
-        <body>
-            <form method="POST" asp-action="Create" autocomplete="off">
-                <table class="table table-borderless justify-content-md-center">
-                    <tr>
-                        <td>Name:</td>
-                        <td>
-                            <input type="hidden" asp-for="Id">
-                            <input type="text" asp-for="Name" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Surname:</td>
-                        <td>
-                            <input type="text" asp-for="Surname" class="form-control">
-
-                    </tr>
-                    <tr>
-                        <td>Department:</td>
-                        <td>
-                            <input type="text" asp-for="Department" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Position:</td>
-                        <td>
-                            <input type="text" asp-for="Position" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number:</td>
-                        <td>
-                            <input type="text" asp-for="PhoneNumber" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Mail Adress:</td>
-                        <td>
-                            <input type="text" asp-for="MailAdress" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Office No:</td>
-                        <td>
-                            <input type="text" asp-for="OfficeNo" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Working Hour:</td>
-                        <td>
-                            <input type="text" asp-for="WorkingHour" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td>
-                            <input type="text" asp-for="Password" class="form-control">
-                        </td>
-                    </tr>
-                    <tr>
-                        @if (Model.Id == 0)
-                        {
+</head>
+<body>
+    <form method="POST" asp-action="Create" autocomplete="off">
+        <table class="table table-borderless justify-content-md-center">
+            <tr>
+                <td style="color:white">Name:</td>
                 <td>
-                    <button type="submit" class="btn btn-success">Create</button>
-                </td> }
-                            else
-                            {
+                    <input type="hidden" asp-for="Id">
+                    <input type="text" asp-for="Name" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Surname:</td>
                 <td>
-                    <button type="submit" class="btn btn-success">Update</button>
-                </td>}
-                    </tr>
+                    <input type="text" asp-for="Surname" class="form-control">
 
-                </table>
-            </form>
+            </tr>
+            <tr>
+                <td style="color:white">Department:</td>
+                <td>
+                    <input type="text" asp-for="Department" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Position:</td>
+                <td>
+                    <input type="text" asp-for="Position" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Phone Number:</td>
+                <td>
+                    <input type="text" asp-for="PhoneNumber" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Mail Adress:</td>
+                <td>
+                    <input type="text" asp-for="MailAdress" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Office No:</td>
+                <td>
+                    <input type="text" asp-for="OfficeNo" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Working Hour:</td>
+                <td>
+                    <div class="form-group" style="width: 97%;">
+                        <div class="input-group date" id="id_0">
+                            <input type="text" asp-for="WorkingHour1" value="05/16/2022 15:30:00 AM" class="form-control" required />
+                            <div class="input-group-addon input-group-append">
+                                <div class="input-group-text">
+                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="input-group date" id="id_1" style="margin-left: 5%;">
+                                <input type="text" asp-for="WorkingHour2" value="05/16/2022 15:30:00 AM" class="form-control" required />
+                                <div class="input-group-addon input-group-append">
+                                    <div class="input-group-text">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:white">Password:</td>
+                <td>
+                    <input type="text" asp-for="Password" class="form-control">
+                </td>
+            </tr>
 
-            <script src="~/js/site.js"></script>
-            <script src="~/js/bootstrap.min.js"></script>
-            <script src="~/js/jquery.countTo.js"></script>
-            <script src="~/js/jquery.filterizr.min.js"></script>
-            <script src="~/js/jquery.magnific-popup.min.js"></script>
-            <script src="~/js/jquery.min.js"></script>
-            <script src="~/js/script.js"></script>
-            <script src="~/js/slick.min.js"></script>
-            <script src="~/js/smooth-scroll.min.js"></script>
-            <script src="~/js/wow.min.js"></script>
-        </body>
-        <script src="~/js/site.js"></script>
-        <script src="~/js/bootstrap.min.js"></script>
-        <script src="~/js/jquery.countTo.js"></script>
-        <script src="~/js/jquery.filterizr.min.js"></script>
-        <script src="~/js/jquery.magnific-popup.min.js"></script>
-        <script src="~/js/jquery.min.js"></script>
-        <script src="~/js/script.js"></script>
-        <script src="~/js/slick.min.js"></script>
-        <script src="~/js/smooth-scroll.min.js"></script>
-        <script src="~/js/wow.min.js"></script>
-    </body>
+            <tr>
+                @if (Model.Id == 0)
+                {
+    <td>
+        <button type="submit" class="btn btn-success">Create</button>
+    </td>
+ }
+else
+{
+<td>
+    <button type="submit" class="btn btn-success">Update</button>
+</td>
+}
+            </tr>
+
+        </table>
+    </form>
+
+    <script src="~/js/site.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/jquery.filterizr.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/smooth-scroll.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/js/demo.js"></script>
+</body>
 </html>

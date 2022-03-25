@@ -16,7 +16,8 @@ namespace DemoTIS.Models
         public string PhoneNumber { get; set; }
         public string MailAdress { get; set; }
         public int OfficeNo { get; set; }
-        public int WorkingHour { get; set; }
+        public string WorkingHour1 { get; set; }
+        public string WorkingHour2 { get; set; }
         public string Surname { get; set; }
         public string Password { get; set; }
 

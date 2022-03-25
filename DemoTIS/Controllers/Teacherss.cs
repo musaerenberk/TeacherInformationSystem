@@ -24,12 +24,12 @@ namespace DemoTIS.Controllers
        
         public IActionResult Index()
         {
-            var list = _context.Teachers.ToList();
+            var list = _context.Teacher.ToList();
             return View(list);
         }
         public async Task<IActionResult> Delete(int Id)
         {
-            var teacher = await _context.Teachers.FindAsync(Id);
+            var teacher = await _context.Teacher.FindAsync(Id);
             _context.Remove(teacher);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -39,7 +39,7 @@ namespace DemoTIS.Controllers
         public async Task<IActionResult> Index(string name)
         {
             ViewData["name"] = name;
-            var teachers = from x in _context.Teachers select x;
+            var teachers = from x in _context.Teacher select x;
             if (!String.IsNullOrEmpty(name))
             {
                 teachers = teachers.Where(x => x.Name.Contains(name) || x.MailAdress.Contains(name) || x.PhoneNumber.Contains(name) || x.Position.Contains(name) || x.Department.Contains(name) || x.Surname.Contains(name));
@@ -66,7 +66,7 @@ namespace DemoTIS.Controllers
             Teacher teacher;
             if (Id.HasValue)
             {
-                teacher = _context.Teachers.Find(Id);
+                teacher = _context.Teacher.Find(Id);
 
             }
             else

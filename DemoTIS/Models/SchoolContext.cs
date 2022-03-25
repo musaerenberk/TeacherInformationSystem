@@ -12,8 +12,8 @@ namespace DemoTIS.Models
         {
 
         }
-        public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<HumanResourcesSpecialist> HumanResourcesSpecialists { get; set; }
+        public DbSet<Teacher> Teacher { get; set; }
+        public DbSet<HumanResourcesSpecialist> HumanResourcesSpecialist { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<HumanResourcesSpecialist>().HasData(
